@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BR.AS.HardwareTopology Version="0.0.0.1">
+  <TimeStamps>
+    <TimeStamp LogicalPath="X20CPU.Hardware.hw" LastWriteTime="01/21/2021 07:41:31" />
+  </TimeStamps>
+  <Modules>
+    <Module Name="X20CP3585" Type="X20CP3585" X="100" Y="100" />
+  </Modules>
+  <Links />
+  <InfoElements />
+</BR.AS.HardwareTopology>

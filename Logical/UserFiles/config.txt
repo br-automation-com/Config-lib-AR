@@ -1,0 +1,5 @@
+# ------------------------------------------------------------------------------
+# Machine configuration
+Password=topsecretpass
+MaxSpeed=123
+MinTemperature=1.234

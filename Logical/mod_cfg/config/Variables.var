@@ -1,0 +1,10 @@
+(*local function calls*)
+VAR
+	cfg_0 : cfg_typ;
+	cmdRead : BOOL;
+	cmdReadAll : BOOL;
+	cmdWrite : BOOL;
+	step : enumSTEP;
+	status : UINT;
+	read : USINT;
+END_VAR

@@ -1,0 +1,27 @@
+(*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*)
+(*Adjustable parameters*)
+VAR CONSTANT
+	BUFFER_SIZE : UDINT := 100000; (*Maximum size of the buffer and therefore the limit for the file size*)
+	DATA_SIZE : UDINT := 200; (*Maximum length of one entry*)
+	ENTRY_SIZE : UDINT := 50; (*Size of the entry name string*)
+END_VAR
+(*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*)
+(*Error code*)
+VAR CONSTANT
+	ERR_DEVICE_EMPTY : UINT := 50000; (*Device name is empty*)
+	ERR_ENTRY_EMPTY : UINT := 50001; (*Entry name is empty*)
+	ERR_FILE_SIZE : UINT := 50010; (*Config file size exceeds buffer size*)
+	ERR_BUFFER_SIZE : UINT := 50011; (*New data exceeds the buffer size*)
+	ERR_DATA_SIZE : UINT := 50012; (*Read data exceeds the size of the data variable*)
+	ERR_ENTRY_NOT_FOUND : UINT := 50020; (*Entry was not found in file*)
+END_VAR
+(*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*)
+(*General constants*)
+VAR CONSTANT
+	CFG_CREATE : USINT := 1; (*Create entry if it does not exist*)
+	OVERRIDE : USINT := 5; (*Speed up execution*)
+	CARRIAGE_RETURN : USINT := 13;
+	LINE_FEED : USINT := 10;
+	EQUAL : STRING[1] := '=';
+	TMP_FILE : STRING[3] := 'tmp';
+END_VAR

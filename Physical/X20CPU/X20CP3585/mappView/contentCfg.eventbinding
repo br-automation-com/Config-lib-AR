@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="contentCfg_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+    <EventBinding id="contentCfg.btnCfgRead.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="contentCfg" widgetRefId="btnCfgRead" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::config:cmdRead">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="contentCfg.btnCfgWrite.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="contentCfg" widgetRefId="btnCfgWrite" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::config:cmdWrite">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="contentCfg.btnCfgReadAll.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="contentCfg" widgetRefId="btnCfgReadAll" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::config:cmdReadAll">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="contentCfg.btnCfgRefresh.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="contentCfg" widgetRefId="btnCfgRefresh" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="widgets.brease.WebViewer.Action" contentRefId="contentCfg" widgetRefId="WebViewer1">
+            <Method xsi:type="widgets.brease.WebViewer.Action.Reload" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+  </Bindings>
+</EventBindingSet>

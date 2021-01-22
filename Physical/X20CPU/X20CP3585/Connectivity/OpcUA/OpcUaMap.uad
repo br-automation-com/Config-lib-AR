@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OpcUaSource FileVersion="7" ArVersion="C4.73">
+  <Aliases>
+    <ACLAliases>
+      <ACL Id="1">
+        <ACE RoleId="2" RoleName="Everyone" Access="0x005F" />
+      </ACL>
+      <ACL Id="2">
+        <ACE RoleId="2" RoleName="Everyone" Access="0x00FF" />
+      </ACL>
+    </ACLAliases>
+    <EURangeViolationAliases />
+    <EURangesAliases />
+    <EngineeringUnitAliases />
+  </Aliases>
+  <DefaultView AclId="2">
+    <Module Name="&lt;Default&gt;">
+      <GlobalVariables Name="Global Variables">
+        <Variable Name="MaxSpeed" />
+        <Variable Name="MinTemperature" />
+        <Variable Name="Password" />
+      </GlobalVariables>
+      <Task Name="config">
+        <Variable Name="cfg_0" AutomaticEnable="True" />
+        <Variable Name="cmdRead" />
+        <Variable Name="cmdWrite" />
+        <Variable Name="status" />
+        <Variable Name="cmdReadAll" />
+      </Task>
+    </Module>
+  </DefaultView>
+</OpcUaSource>

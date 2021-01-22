@@ -1,0 +1,5 @@
+VAR
+	MinTemperature : REAL;
+	MaxSpeed : UINT;
+	Password : STRING[80];
+END_VAR

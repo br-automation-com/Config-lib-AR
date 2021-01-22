@@ -1,0 +1,9 @@
+
+TYPE
+	enumSTEP : 
+		(
+		STEP_WAIT,
+		STEP_READ,
+		STEP_EXECUTE
+		);
+END_TYPE
