@@ -53,7 +53,7 @@ The library contains only one function call "fct_cfg" that receives a pointer to
   </tr>
     <tr>
    <td>data</td>
-   <td>Entry data as string</td>
+   <td>Entry data as string for read command or new data for write command</td>
   </tr>
     <tr>
    <td>option</td>
@@ -89,7 +89,7 @@ mappFileExplorer->ExplorerVariables.var
 
 <a name="Errors"></a>
 ## Error
-The sample generates the following list of error messages. All other error numbers are generated from included libraries that can be found in the Automation Studio help.
+The function returns the status of the command. This is busy (65535) while the command is running and 0 when the command was finished succesful. The function generates the following error codes.
 
 | No | Constant | Text |
 |---|---|---|
@@ -99,6 +99,8 @@ The sample generates the following list of error messages. All other error numbe
 | 50011 | ERR_BUFFER_SIZE | New data exceeds the buffer size, increase BUFFER_SIZE |
 | 50012 | ERR_DATA_SIZE | Read data exceeds the size of the data variable, increase DATA_SIZE |
 | 50020 | ERR_ENTRY_NOT_FOUND | Entry was not found in file |
+
+All other error numbers are generated from included libraries that can be found in the Automation Studio help.
 
 <a name="Revision-History"></a>
 
