@@ -11,14 +11,18 @@
         <Widget xsi:type="widgets.brease.TextInput" id="txtCfgPassword" top="163" left="149" width="250" zIndex="5" />
         <Widget xsi:type="widgets.brease.Label" id="labNETdomain" top="198" left="5" width="134" zIndex="6" text="Motor Speed" textAlign="right" />
         <Widget xsi:type="widgets.brease.Button" id="btnCfgWrite" top="58" left="529" width="160" height="40" zIndex="7" text="Write" cornerRadius="5px" />
-        <Widget xsi:type="widgets.brease.Label" id="labNETStatusNo" top="8" left="939" width="76" zIndex="8" text="Status" textAlign="right" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="numStatusNo" top="8" left="1024" width="131" height="27" zIndex="9" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" borderWidth="1px" cornerRadius="5px" padding="0px 5px 0px 5px" />
+        <Widget xsi:type="widgets.brease.Label" id="labNETStatusNo" top="8" left="914" width="76" zIndex="8" text="Status" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="numStatusNo" top="8" left="1000" width="155" height="27" zIndex="9" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" borderWidth="1px" cornerRadius="5px" padding="0px 5px 0px 5px" />
         <Widget xsi:type="widgets.brease.Label" id="labNETpath" top="233" left="5" width="134" zIndex="10" text="Temperatur" textAlign="right" />
         <Widget xsi:type="widgets.brease.Button" id="btnCfgRead" top="13" left="529" width="160" height="40" zIndex="11" text="Read" cornerRadius="5px" />
         <Widget xsi:type="widgets.brease.NumericInput" id="numCfgMotorSpeed" top="198" left="149" width="131" zIndex="12" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" />
         <Widget xsi:type="widgets.brease.NumericInput" id="numCfgTemperature" top="233" left="149" width="131" zIndex="13" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" />
         <Widget xsi:type="widgets.brease.Button" id="btnCfgReadAll" top="158" left="529" width="160" height="40" zIndex="14" text="Read All" cornerRadius="5px" />
         <Widget xsi:type="widgets.brease.CheckBox" id="chkCfgNewEntry" top="88" left="149" width="171" zIndex="15" text="Create new entry" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="btnUSBconnected1" top="43" left="1059" width="35" height="35" zIndex="50" mouseDownText="1" text="1" backGroundGradient="linear-gradient(to bottom,#F7F7F7 0%,#f60909 100%)" disabledBackGroundGradient="linear-gradient(to bottom,#F7F7F7 0%,#f60909 100%)" checkedBackGroundGradient="linear-gradient(to bottom, #4A4A4A 0%,#29920c 100%)" disabledCheckedBackGroundGradient="linear-gradient(to bottom, #4A4A4A 0%,#29920c 100%)" enable="false" />
+        <Widget xsi:type="widgets.brease.Label" id="labNETStatusNo1" top="48" left="850" width="144" zIndex="51" text="USB Connected" textAlign="right" />
+        <Widget xsi:type="widgets.brease.Button" id="btnCfgRestore" top="143" left="999" width="160" height="40" zIndex="52" text="Restore" cornerRadius="5px" />
+        <Widget xsi:type="widgets.brease.Button" id="btnCfgBackup" top="98" left="999" width="160" height="40" zIndex="53" text="Backup" cornerRadius="5px" />
       </Widgets>
     </Widget>
     <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox1" top="340" left="15" width="1175" height="450" zIndex="11" text="File Content">

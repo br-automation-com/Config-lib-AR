@@ -8,5 +8,6 @@
     <Object Type="Package">mod_cfg</Object>
     <Object Type="Package">mappView</Object>
     <Object Type="Package">UserFiles</Object>
+    <Object Type="Package">USBdevice</Object>
   </Objects>
 </Package>

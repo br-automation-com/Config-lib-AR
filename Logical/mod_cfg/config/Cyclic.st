@@ -2,6 +2,9 @@ PROGRAM _INIT
 	// Set read and write config parameters
 	cfg_0.device	:= ADR('UserData');
 	cfg_0.file_name	:= ADR('config.txt');
+
+	FileCopy_0.pSrc := ADR('config.txt');
+	FileCopy_0.pDest := ADR('config.txt');
 END_PROGRAM
 
 PROGRAM _CYCLIC
@@ -20,6 +23,18 @@ PROGRAM _CYCLIC
 				cfg_0.write := cmdWrite;
 				step := STEP_EXECUTE;
 			END_IF
+			// Backup config file to USB stick
+			IF cmdBackup THEN
+				FileCopy_0.pSrcDev := ADR('UserData');
+				FileCopy_0.pDestDev := ADR('USB_DEVICE1');
+				step := STEP_TRANSFER;
+			END_IF
+			// Restore config file to USB stick
+			IF cmdRestore THEN
+				FileCopy_0.pSrcDev := ADR('USB_DEVICE1');
+				FileCopy_0.pDestDev := ADR('UserData');
+				step := STEP_TRANSFER;
+			END_IF	
 		// --------------------------------------------------------------------------------------------------
 		// Read complete configuration
 		STEP_READ:
@@ -63,6 +78,15 @@ PROGRAM _CYCLIC
 					step := STEP_WAIT;
 				END_IF
 			END_IF
+		// --------------------------------------------------------------------------------------------------
+		// Call function for read and write configuration
+		STEP_TRANSFER:			
+			FileCopy_0(enable := 1, option := fiOVERWRITE);
+			IF FileCopy_0.status <> ERR_FUB_BUSY THEN
+				cmdBackup := FALSE;
+				cmdRestore := FALSE;
+				step := STEP_WAIT;
+			END_IF		
 	END_CASE
 END_PROGRAM
 

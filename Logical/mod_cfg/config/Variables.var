@@ -4,6 +4,9 @@ VAR
 	cmdRead : BOOL;
 	cmdReadAll : BOOL;
 	cmdWrite : BOOL;
+	cmdBackup : BOOL;
+	cmdRestore : BOOL;
+	FileCopy_0 : FileCopy;
 	step : enumSTEP;
 	status : UINT;
 	read : USINT;

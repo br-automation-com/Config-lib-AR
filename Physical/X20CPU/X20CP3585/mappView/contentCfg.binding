@@ -1,34 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BindingsSet id="contentCfg_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Bindings>
+	<Bindings>
 
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::config:cfg_0.entry" attribute="value" />
-<Target xsi:type="brease" contentRefId="contentCfg" widgetRefId="txtCfgEntraName" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::config:cfg_0.data" attribute="value" />
-<Target xsi:type="brease" contentRefId="contentCfg" widgetRefId="txtCfgEntyrData" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:MaxSpeed" attribute="value" />
-<Target xsi:type="brease" contentRefId="contentCfg" widgetRefId="numCfgMotorSpeed" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:Password" attribute="value" />
-<Target xsi:type="brease" contentRefId="contentCfg" widgetRefId="txtCfgPassword" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:MinTemperature" attribute="value" />
-<Target xsi:type="brease" contentRefId="contentCfg" widgetRefId="numCfgTemperature" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::config:status" attribute="value" />
-<Target xsi:type="brease" contentRefId="contentCfg" widgetRefId="numStatusNo" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::config:cfg_0.option" attribute="value" />
-<Target xsi:type="brease" contentRefId="contentCfg" widgetRefId="chkCfgNewEntry" attribute="value" />
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::config:cfg_0.entry" attribute="value" />
+			<Target xsi:type="brease" contentRefId="contentCfg" widgetRefId="txtCfgEntraName" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::config:cfg_0.data" attribute="value" />
+			<Target xsi:type="brease" contentRefId="contentCfg" widgetRefId="txtCfgEntyrData" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:MaxSpeed" attribute="value" />
+			<Target xsi:type="brease" contentRefId="contentCfg" widgetRefId="numCfgMotorSpeed" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:Password" attribute="value" />
+			<Target xsi:type="brease" contentRefId="contentCfg" widgetRefId="txtCfgPassword" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:MinTemperature" attribute="value" />
+			<Target xsi:type="brease" contentRefId="contentCfg" widgetRefId="numCfgTemperature" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::config:status" attribute="value" />
+			<Target xsi:type="brease" contentRefId="contentCfg" widgetRefId="numStatusNo" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::config:cfg_0.option" attribute="value" />
+			<Target xsi:type="brease" contentRefId="contentCfg" widgetRefId="chkCfgNewEntry" attribute="value" />
+		</Binding>
+	<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:USB.PAR.is_connected[1]" attribute="value" />
+<Target xsi:type="brease" contentRefId="contentCfg" widgetRefId="btnUSBconnected1" attribute="value" />
 </Binding>
 </Bindings>
 </BindingsSet>

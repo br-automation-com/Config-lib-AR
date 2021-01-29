@@ -41,5 +41,25 @@
         </Action>
       </EventHandler>
     </EventBinding>
+    <EventBinding id="contentCfg.btnCfgBackup.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="contentCfg" widgetRefId="btnCfgBackup" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::config:cmdBackup">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="contentCfg.btnCfgRestore.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="contentCfg" widgetRefId="btnCfgRestore" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::config:cmdRestore">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
   </Bindings>
 </EventBindingSet>

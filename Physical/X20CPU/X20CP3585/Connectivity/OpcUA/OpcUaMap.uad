@@ -19,6 +19,11 @@
         <Variable Name="MaxSpeed" />
         <Variable Name="MinTemperature" />
         <Variable Name="Password" />
+        <Variable Name="USB" AutomaticEnable="True">
+          <Variable Name="PAR">
+            <Variable Name="is_connected" EnableArrayElements="True" />
+          </Variable>
+        </Variable>
       </GlobalVariables>
       <Task Name="config">
         <Variable Name="cfg_0" AutomaticEnable="True" />
@@ -26,6 +31,8 @@
         <Variable Name="cmdWrite" />
         <Variable Name="status" />
         <Variable Name="cmdReadAll" />
+        <Variable Name="cmdBackup" />
+        <Variable Name="cmdRestore" />
       </Task>
     </Module>
   </DefaultView>
